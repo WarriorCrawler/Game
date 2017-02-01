@@ -1,0 +1,20 @@
+cout << R"(
+ _    _                 _              _____                    _           
+| |  | |               (_)            /  __ \                  | |          
+| |  | | __ _ _ __ _ __ _  ___  _ __  | /  \/_ __ __ ___      _| | ___ _ __ 
+| |/\| |/ _` | '__| '__| |/ _ \| '__| | |   | '__/ _` \ \ /\ / | |/ _ | '__|
+\  /\  | (_| | |  | |  | | (_) | |    | \__/| | | (_| |\ V  V /| |  __| |   
+ \/  \/ \__,_|_|  |_|  |_|\___/|_|     \____|_|  \__,_| \_/\_/ |_|\___|_|   
+                                                                              
+ )" << endl;
+
+cout << "0: Play" << endl;
+cout << "1: ScoreBoard" << endl;
+cout << "2: Exit" << endl;
+cout << endl;
+
+cout << "Choice: ";
+cin >> Choice;
+cout << endl;
+
+//Start Menu with cool ASCII art Switch statement to be added for options.

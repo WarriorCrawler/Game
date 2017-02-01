@@ -1,0 +1,13 @@
+cout << "== RESET MENU ==" << endl << endl;
+
+cout << "Are you sure you want to Reset Your Character?" << endl;
+
+cout << "0: No" << endl;
+cout << "1: Yes" << endl;
+cout << endl;
+
+cout << endl << "Choice : ";
+cin >> Resetchoice;
+cout << endl;
+
+//to reset character stats, add switch statement for options
