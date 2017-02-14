@@ -1,5 +1,0 @@
-cout << "Enter a character name you want" << endl << "then hit ENTER" << endl;
-cout << "Name : ";
-cin >> Name;
-
-//To create the character name and store it to the variable Name
