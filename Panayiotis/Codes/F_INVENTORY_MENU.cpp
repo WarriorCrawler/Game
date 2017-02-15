@@ -228,7 +228,7 @@ void F_INVENTORY_MENU()
 
 					break;
 				case 2://if choise was to upgrade equiped weapon
-					if (ARMOR_NAME != "Noob Sword")//check to make sure not to ammend starter weapon
+					if (WEAPON_NAME != "Noob Sword")//check to make sure not to ammend starter weapon
 					{
 						F_UPGRADE_WEAPON();//call upgrade function to enhance weapon
 					}
