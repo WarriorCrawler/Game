@@ -47,14 +47,14 @@ void F_LOOT_BOX()
 					// GOLD_GAINED variable
 					int GOLD_GAINED = rand() % (PLAYER_GOLD * 40 / 100);
 					PLAYER_GOLD += GOLD_GAINED; //add the random number of gold to the player
-
+					F_SAVE(); //call save function to save changes to character table
 					//alert user he looted gold and the ammount
 					cout << "You Looted " << GOLD_GAINED << " Gold" << endl;
 				}
 				else if (RAND_PERCENTAGE > 20 && RAND_PERCENTAGE <= 40)//20% change to loot 3 potions
 				{
 					PLAYER_HP_POTIONS += 3; //increase potions by 3
-
+					F_SAVE(); //call save function to save changes to character table
 					//alert user that he looted potions
 					cout << "You Looted 3 Potion" << endl;
 				}
