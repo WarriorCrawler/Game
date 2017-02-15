@@ -14,7 +14,7 @@ void F_SELECT_MONSTER_ID(int LVL)
 
 		while (cur->step())// loop over results
 		{
-			if (cur->get_int(2) == LVL) //check to make sure monsters IDs added to vector are equal to players level
+			if (cur->get_int(2) == LVL && cur->get_int(0) != 50) //check to make sure monsters IDs added to vector are equal to players level
 			{
 				MONSTER_LIST.push_back(cur->get_int(0));// Adds a new element to the end of the vector
 				

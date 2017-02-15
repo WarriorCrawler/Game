@@ -35,6 +35,7 @@ int main()
 			PLAYER_LUCK = cur->get_int(14);
 			PLAYER_UID = cur->get_int(15);
 			PLAYER_ENHANCEMENT_STONES = cur->get_int(16);
+			QUEST_STAGE = cur->get_int(17);
 
 		}
 		//call bellow two functions to load items equiped

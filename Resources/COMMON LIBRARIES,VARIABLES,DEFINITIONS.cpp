@@ -30,12 +30,20 @@ void F_HUNT_MENU();
 #define YELLOW			14
 #define WHITE			15
 
-
+// Defining effetcs
 #define NONE		0
 #define POISONED	1
 #define DAMAGE_INCREASE	2
 #define NO_POTIONS 3
 
+// Defining quest modes
+bool questing = false;
+#define NO_MODE 0
+#define KILL_MODE 1
+#define COLLECT_MODE 2
+int QUEST_OBJECTIVE = 0;
+int QUEST_MODE = 0;
+int MOB_COUNT = 0;
 
 
 HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE); //Gets the colour we choose and changes the text colour
@@ -58,6 +66,7 @@ int PLAYER_LUCK;
 int PLAYER_UID;
 int PLAYER_ENHANCEMENT_STONES;
 int CURRENT_EFFECT;
+int QUEST_STAGE;
 
 //Armor stats
 string ARMOR_NAME;
@@ -100,6 +109,7 @@ bool ViewingWeapons;
 bool StartMenu;
 bool InLoot;
 bool InInstructionsMenu;
+bool InQuest;
 
 //Monster Related
 vector<int> MONSTER_LIST;

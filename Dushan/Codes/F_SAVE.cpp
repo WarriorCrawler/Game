@@ -24,6 +24,7 @@ void F_SAVE() //Saves any changes to the database
 			"', Luck = '" + to_string(PLAYER_LUCK) +
 			"', UID = '" + to_string(PLAYER_UID) +
 			"', EnhancementStones = '" + to_string(PLAYER_ENHANCEMENT_STONES) +
+			"', QuestStage = '" + to_string(QUEST_STAGE) +
 			"' WHERE ID = 1");
 		cur->exec();//Executes the statement
 	}

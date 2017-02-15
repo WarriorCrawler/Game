@@ -97,11 +97,13 @@ void F_LOOT_BOX()
 			cout << endl;
 			InLoot = false; //change bool state to false to exit menu
 			F_SELECT_MONSTER_ID(PLAYER_LEVEL); //call select monster function to get new monster
+			F_COMBAT_MENU();//call combat menu
 			break;
 		case 1:
 			system("cls"); //clear screen
 			InLoot = false; //change bool state to false to exit menu
 			F_SELECT_MONSTER_ID(PLAYER_LEVEL); //call select monster function to get new monster
+			F_COMBAT_MENU();//call combat menu
 			break;
 		}
 	}

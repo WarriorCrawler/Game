@@ -33,6 +33,8 @@ void F_TOWN_MENU()
 		Playing = false;//change bool state to false to exit game
 		break;
 	case 1://if player chose to quest
+		system("cls");//clear screen
+		F_QUEST_LOG(); //call the menu
 		break;
 	case 3:// if player chose to hunt
 		system("cls");//clear screen

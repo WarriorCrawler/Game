@@ -85,7 +85,8 @@ void F_DAMAGE_CONTROL()
 			SetConsoleTextAttribute(hConsole, WHITE);
 		}
 
-		F_LEVEL_CHECK();//call level check to check if the player can progress to level 2
+		F_LEVEL_CHECK();//call level check to check if the player can progress to next level
+		F_QUEST_PROGRESS();// call quest progress
 		InCombat = false;//change the bool to false to exit combat menu
 
 		if (rand() % 100 < 10) // 10% change to find loot box
