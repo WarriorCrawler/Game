@@ -23,6 +23,7 @@ void F_CAMPFIRE()
 			PLAYER_STAMINA++; //increase player stamina by 1
 			Sleep(1000); //delay for 1 second 
 		}
+		system("cls"); //clear screen
 		F_SAVE(); //call save function to save stamina value to database
 
 				  //alert user that his stamina is full 

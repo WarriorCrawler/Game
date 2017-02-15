@@ -43,7 +43,7 @@ void F_MONSTER_ATTACK()
 			SetConsoleTextAttribute(hConsole, WHITE);
 
 			InCombat = false;//change bool state to false to exit this menu and go to town menu
-
+			F_TOWN_MENU();
 
 
 		}
